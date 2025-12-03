@@ -5,8 +5,6 @@ Stronlgy Vibe coded with Gemini, Claude and Grok + me to add some mess
 
 Support me or the project :
 
-<img width="632" height="632" alt="image" src="https://github.com/user-attachments/assets/af638547-6627-43ab-8d4b-cf5a46410bc0" />
-
 <img width="632" height="632" alt="image" src="https://github.com/user-attachments/assets/6005c366-3829-4e2c-9adb-8d16f836c165" />
 
 
