@@ -1,0 +1,5 @@
+## Interface: 11503
+## Title: Arbitrage Addon
+## Notes: Auction House arbitrage tool
+## SavedVariables: ArbitrageDB
+ArbitrageAddon.lua
