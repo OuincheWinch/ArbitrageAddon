@@ -8,7 +8,7 @@ Support me or the project :
 <img width="632" height="632" alt="image" src="https://github.com/user-attachments/assets/6005c366-3829-4e2c-9adb-8d16f836c165" />
 
 
-This addon need Auctioneer to works ! 
+This addon need Auctioneer to works ! Scan function are Auctioneer ones , so Auctionner is mandatory ! 
 
 /*************************************************  ENGLISH  *************************************************\
 
@@ -16,51 +16,137 @@ This addon need Auctioneer to works !
 Arbitrage: The Great Migration (WoW Classic Addon)
 Version: 1.0 License: MIT
 
-Arbitrage is a powerful Auction House tool designed to help players identify profitable transfers between the Anniversary and Era servers following The Great Migration.
+📈 Arbitrage: The Great Migration - User Guide
+Arbitrage helps you identify profitable item transfers between WoW Classic Anniversary and WoW Classic Era servers. By scanning the Auction House on both servers, it calculates potential profits, liquidity, and helps you organize your shopping list.
 
-⚠️ Critical Disclaimer: Data Only Tool
-This addon is purely informational. It strictly provides raw price data and calculates the theoretical maximum profit margin based on the lowest recorded buyout price on each server's Auction House (AH).
+🚀 Getting Started
+Step 1: Installation
+Download the addon from CurseForge or GitHub.
 
-YOUR DECISION TO BUY, SELL, OR TRANSFER IS ENTIRELY YOUR OWN RESPONSIBILITY.
+Extract the folder into your WoW Addons directory:
 
-The suggested profit is a best-case scenario and does not account for AH fees (deposits or the 5% sales tax).
+_classic_era_\Interface\AddOns\ArbitrageAddon
 
-Data is only as fresh as your last scan. Prices change constantly.
+Step 2: First Launch
+Log into the game on either the Anniversary or Era server.
 
-High theoretical profit does not guarantee high demand (liquidity) on the Era server.
+Open the Auction House.
 
-🎯 The Great Migration: Anniv → Era
-The core function of this addon is to identify items that are significantly undervalued on the Anniversary server (where you buy) and overvalued on the Era server (where you sell).
+Type /arbi in the chat to open the main window.
 
-Migration Path: Anniv (Buy) → Era (Sell)
+Note: You can verify the interface version in the top right corner (e.g., v1.0.4).
 
-The profit calculation is always based on: Profit = (Era Price) - (Anniversary Price).
+📊 How to Scan Data
+To compare prices, you need data from BOTH servers. The order doesn't matter, but fresh data is better.
 
-Installation
-Download the latest release archive (.zip).
+1. Scan the "Era" Server (Destination)
+Log on to your Era character.
 
-Extract the contents of the archive.
+Open the Auction House and type /arbi.
 
-Place the ArbitrageAddon folder directly into your World of Warcraft\_classic_\Interface\AddOns directory.
+Click the button: [Set Target: ERA].
 
-Restart World of Warcraft Classic or type /reload.
+The addon status will change to: Target: ERA (Waiting...).
 
-English User Manual (How to Use)
-1. Scanning (Data Collection)
-Arbitrage relies on data you collect manually by scanning the Auction House on your two target characters (one on Era, one on Anniv).
+Interact with the Auctioneer and click the "Search" button in the default WoW UI to load the first page of items.
 
-Choose Your Target Server: Log in to your Anniversary character, open the Arbitrage frame by typing /arbi, and click Set Target: ANNIV.
+The addon will automatically detect the list update and start scanning.
 
-Scan the Auction House: Go to the Auction House and perform a full search. Wait for all pages to load. The addon will automatically process the data.
+Status: SCANNING: 25% (500/2000)...
 
-Repeat for Era Server: Log in to your Era character, open the frame, click Set Target: ERA, and repeat the full AH scan.
+Do not close the AH window until the status says: Ready!.
 
-2. Features and Controls
-Filters: Use the inputs to filter the list by Min Profit %, Min Gold, and Min Quality. Checkboxes allow you to Hide Missing items on Era and show Only Favs.
+2. Scan the "Anniversary" Server (Source)
+Log on to your Anniversary character.
 
-Alt + Right Click on Item Name: Blacklists the item, removing it from the main list.
+Open the Auction House and type /arbi.
 
-Ignored Items Button: Toggles the view to show ONLY blacklisted items. Right-Click an item in this mode to restore it.
+Click the button: [Set Target: ANNIV].
+
+Repeat the scan process (Search -> Wait for 100%).
+
+Once Ready! appears, click [Refresh List].
+
+⚠️ Important: If more than 30 minutes have passed between the two scans, a warning (Desynced >30m) will appear. Prices may have changed!
+
+💰 Analyzing the Data
+Once you have data from both sides, the list will populate automatically.
+
+Understanding the Columns
+Fav: Checkbox to mark an item as a Favorite (kept even after a reset).
+
+Item Name: The name of the item (colored by rarity).
+
+Liq.(ERA): Liquidity on the destination server.
+
+Green: High supply (Easy to sell/buy).
+
+Red/Orange: Low supply (Risky, might take time to sell).
+
+Era Price: The lowest buyout price on the destination server.
+
+Anniv Price: The lowest buyout price on the source server.
+
+Profit: The raw gold difference per item.
+
+Profit %: The return on investment percentage.
+
+Filtering & Sorting
+Search: Filter items by name (e.g., "Lotus").
+
+Min %: Show only items with at least X% profit (Default: 400%).
+
+Min Gold: Show only items with a raw profit of X Gold.
+
+Hide Missing: Hides items that exist on Anniversary but have 0 quantity on Era.
+
+Only Favs: Displays only your favorited items.
+
+🛠 Advanced Features
+Favorites System
+Add: Check the box in the "Fav" column.
+
+View: Check [Only Favs] to focus solely on your watchlist.
+
+Note: Favorites persist even if you reset scan data.
+
+Blacklist (Ignore List)
+Don't want to see "Linen Cloth" anymore?
+
+Hold Alt + Right-Click on any item in the list.
+
+The item will vanish instantly.
+
+To Manage Ignored Items:
+
+Click the [Ignored Items] button.
+
+The list will turn red (Blacklist Mode).
+
+Right-Click an item here to restore it to the main list.
+
+Click [Back to List] to return to normal view.
+
+History Tooltip
+Hover over any item in the list (or anywhere in the game!) to see the Arbitrage tooltip. It shows:
+
+Current Era & Anniv Prices.
+
+History: Compares the current price with the previous scan to spot trends (e.g., "Price increased by 5g").
+
+Resetting Data
+[Reset Data]: Clears all scan data (Era & Anniv) to start fresh. Keeps Favorites & Blacklist.
+
+[Remove Duplicates]: Cleans up the database if weird duplicates appear.
+
+📧 Support & Feedback
+Found a bug? Have a suggestion?
+
+Contact: ouinche@gmail.com
+
+GitHub Issues: [Link to your Repo]
+
+Happy Trading!
 
 /*************************************************  FRANÇAIS  *************************************************\
 
