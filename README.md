@@ -36,6 +36,9 @@ Type /arbi in the chat to open the main window.
 
 Note: You can verify the interface version in the top right corner (e.g., v1.0.4).
 
+https://youtu.be/wcEUaaa0idU
+
+
 📊 How to Scan Data
 To compare prices, you need data from BOTH servers. The order doesn't matter, but fresh data is better.
 
@@ -48,7 +51,7 @@ Click the button: [Set Target: ERA].
 
 The addon status will change to: Target: ERA (Waiting...).
 
-Interact with the Auctioneer and click the "Search" button in the default WoW UI to load the first page of items.
+Interact with the Auctioneer and click the "Scan" button ⏩ in the default WoW UI to load the first page of items.
 
 The addon will automatically detect the list update and start scanning.
 
